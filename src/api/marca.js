@@ -1,19 +1,19 @@
 import axios from "axios";
-export default class CorApi {
-  async buscarTodasAsCores() {
-    const { data } = await axios.get("/cor/");
+export default class MarcaApi {
+  async buscarTodasAsMarcas() {
+    const { data } = await axios.get("/marca/");
     return data.results;
   }
-  async adicionarCor(cors) {
-    const { data } = await axios.post("/cor/", cors);
+  async adicionarMarca(marcas) {
+    const { data } = await axios.post("/marca/", marcas);
     return data.results;
   }
-  async atualizarCor(cors) {
-    const { data } = await axios.put(`/cor/${cors.id}/`, cors);
+  async atualizarMarca(marcas) {
+    const { data } = await axios.put(`/marca/${marcas.id}/`, marcas);
     return data.results;
   }
-  async excluirCor(id) {
-    const { data } = await axios.delete(`/cor/${id}/`);
+  async excluirMarca(id) {
+    const { data } = await axios.delete(`/marca/${id}/`);
     return data.results;
   }
 }
