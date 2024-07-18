@@ -12,7 +12,7 @@ const authStore = useAuthStore();
     <router-link :to="{ name: 'home' }">Home</router-link> |
     <router-link to="/categorias">Categorias</router-link> |
     <router-link :to="{ name: 'cor' }">Cor</router-link> |
-    <router-link :to="{ name: '' }">Criar Passage</router-link> |
+    <router-link :to="{ name: 'marca' }">Marca</router-link> |
     <div v-if="authStore.loggedIn">
     <router-link  to="/logout">Logout</router-link> |
       {{ authStore.user.email }}
