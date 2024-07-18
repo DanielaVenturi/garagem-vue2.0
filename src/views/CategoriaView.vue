@@ -50,7 +50,7 @@ async function excluir(id) {
       <span @click="editar(categoria)">
         ({{ categoria.id }}) - {{ categoria.descricao }} -
       </span>
-      <button @click="excluir(categoria.id)">X</button>
+      <button @click="excluir(categoria.id)">x</button>
     </li>
   </ul>
 </template>
